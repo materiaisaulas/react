@@ -1,4 +1,4 @@
-## 1.4 Execução em modo desenvolvimento
+## Execução em modo desenvolvimento
 
 A **execução em modo desenvolvimento** corresponde à etapa em que a aplicação é iniciada localmente para implementação, teste visual e verificação contínua durante a construção do projeto. Em projetos criados com Vite, essa execução é realizada por meio de um script definido no arquivo `package.json`.
 
@@ -39,7 +39,7 @@ A execução em modo desenvolvimento pode ser sintetizada assim:
 ![Execução em modo desenvolvimento](./execucao_em_modo_dev.png)
 
 
-## 1.4.1 Servidor local de desenvolvimento
+## Servidor local de desenvolvimento
 
 O **servidor local de desenvolvimento** é o processo responsável por disponibilizar a aplicação no navegador durante a fase de implementação. Em projetos criados com Vite, esse servidor é iniciado pelo comando de desenvolvimento e executado no próprio computador do desenvolvedor.
 
@@ -63,7 +63,7 @@ O servidor local de desenvolvimento não corresponde à versão final da aplica�
 
 Nesse ambiente, o Vite processa os módulos da aplicação conforme necessário e permite que alterações no código sejam refletidas rapidamente no navegador. Esse comportamento reduz o intervalo entre modificar um arquivo e verificar o resultado visual ou funcional da alteração.
 
-## 1.4.2 Build da aplicação
+## Build da aplicação
 
 O **build da aplicação** corresponde ao processo de geração da versão final do projeto para distribuição ou publicação. Diferentemente da execução em modo desenvolvimento, o build não mantém o projeto em estado de edição contínua. Sua finalidade é produzir arquivos otimizados para execução em ambiente de produção.
 
@@ -98,7 +98,7 @@ Durante o build, o Vite processa os módulos importados, resolve dependências, 
 
 A pasta `dist` não corresponde ao código-fonte original. Ela contém o resultado processado do projeto. Por esse motivo, em muitos projetos versionados com Git, `dist` pode ser tratada como artefato de build, enquanto o código-fonte permanece concentrado em diretórios como `src`.
 
-## 1.4.3 Preview da aplicação empacotada
+## Preview da aplicação empacotada
 
 O **preview da aplicação empacotada** corresponde à execução local da versão gerada pelo processo de build. Essa etapa permite verificar, no navegador, o comportamento da aplicação após a geração dos arquivos finais destinados ao ambiente de produção.
 

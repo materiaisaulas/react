@@ -1,4 +1,4 @@
-## 2.14 `render`
+## `render`
 
 O método **`render`** é utilizado para exibir uma estrutura React dentro de uma raiz criada previamente com `createRoot`. Ele recebe como argumento um elemento React e solicita ao React que apresente essa estrutura no elemento DOM associado à raiz.
 

@@ -1,4 +1,4 @@
-## 1.2 npm
+## npm
 
 O **npm** é o gerenciador de pacotes associado ao ecossistema Node.js. Em projetos React com Vite, ele é utilizado para instalar dependências, registrar bibliotecas utilizadas pela aplicação e executar scripts definidos no projeto.
 

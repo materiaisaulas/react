@@ -1,4 +1,4 @@
-## 1.1 Node.js
+## Node.js
 
 O **Node.js** é o ambiente de execução utilizado como base para o desenvolvimento de aplicações JavaScript modernas fora do navegador. Em projetos React criados com Vite, ele fornece a infraestrutura necessária para executar ferramentas de criação, instalação, desenvolvimento, testes e empacotamento da aplicação.
 

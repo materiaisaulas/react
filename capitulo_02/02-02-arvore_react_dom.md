@@ -331,6 +331,41 @@ main.tsx
 
 O `main.tsx` não representa uma tela da aplicação. Sua função é iniciar a aplicação React, conectando o documento HTML, o React DOM, o CSS global e a estrutura principal que será renderizada no navegador.
 
+## Importação do CSS global
+
+A **importação do CSS global** corresponde ao carregamento do arquivo de estilos que define regras visuais aplicáveis à aplicação como um todo. Em projetos React com Vite, essa importação normalmente ocorre no arquivo de entrada da aplicação, como o `main.tsx`.
+
+No arquivo `main.tsx`, a importação aparece da seguinte forma:
+
+```tsx
+import "./index.css";
+```
+
+Esse comando não importa uma função, uma constante ou um componente. Ele importa um arquivo CSS para que suas regras sejam processadas pelo ambiente de desenvolvimento e aplicadas à interface renderizada no navegador.
+
+A documentação oficial do Vite informa que arquivos CSS podem ser importados diretamente a partir de arquivos JavaScript. O conteúdo importado é inserido na página e também participa do processo de atualização durante o desenvolvimento. ([vite.dev](https://vite.dev/guide/features.html#css))
+
+O arquivo `index.css` é chamado de global porque suas regras podem afetar elementos, classes e estruturas presentes em diferentes partes da aplicação. Regras aplicadas ao `body`, a links, botões, classes utilitárias ou variáveis CSS ficam disponíveis para toda a interface.
+
+Exemplo simplificado:
+
+```css
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+```
+
+Essas regras não pertencem a um componente específico. Elas definem comportamentos visuais gerais da aplicação.
+
+A importação no `main.tsx` garante que o CSS global seja carregado desde o início da aplicação, antes da renderização visual das telas. Como o `main.tsx` é o ponto de entrada do projeto, todo estilo importado nesse arquivo passa a fazer parte da base visual comum da aplicação.
+
+A importação do CSS global não renderiza conteúdo na tela. Ela apenas disponibiliza regras visuais que serão aplicadas aos elementos renderizados pelos componentes React.
+
 
 ## `createRoot`
 

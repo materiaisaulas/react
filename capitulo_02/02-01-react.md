@@ -1,4 +1,4 @@
-## React
+## O que é React
 
 O **React** é a biblioteca utilizada para construir interfaces de usuário a partir de componentes. Em uma aplicação React, a interface não é organizada como um único bloco de HTML, mas como um conjunto de partes menores, reutilizáveis e combináveis.
 
@@ -76,6 +76,8 @@ No primeiro exemplo, `button` representa um elemento HTML nativo. No segundo, `B
 
 O componente React deve ser compreendido como uma abstração de interface. Ele organiza partes da tela em unidades nomeadas, permite composição entre essas unidades e estrutura a aplicação como uma árvore de componentes. A forma específica de declarar um componente será tratada no subtítulo seguinte.
 
+## Criação de componente
+
 Uma forma de declarar um componente React é por meio de uma função JavaScript ou TypeScript. Essa função define uma unidade de interface e pode receber dados externos por meio de propriedades, chamadas em React de **props**.
 
 A documentação oficial do React apresenta componentes como funções JavaScript que retornam marcação. Essa marcação descreve a parte da interface que será renderizada. ([react.dev](https://react.dev/learn/your-first-component))
@@ -96,13 +98,15 @@ function PageHeader() {
 }
 ```
 
-Para que o componente seja usado por outros arquivos ele deve ser exportado:
+Para que o componente seja usado por outros arquivos, ele deve ser exportado:
 
 ```tsx
 export function PageHeader() {
   // definição do componente
 }
 ```
+
+## Props em componentes: parâmetros
 
 Um componente também pode receber **props**. As props representam dados fornecidos ao componente no momento em que ele é utilizado.
 
@@ -148,6 +152,8 @@ Exemplo de uso compatível:
   subtitle="Pedido rápido, simples e seguro."
 />
 ```
+
+## Retorno JSX
 
 O **retorno de JSX** é a parte do componente React responsável por descrever a estrutura visual que será renderizada na interface. Em componentes funcionais, essa estrutura é devolvida pela instrução `return`.
 
@@ -298,6 +304,8 @@ export function Badge({ count }: BadgeProps) {
 
 A documentação oficial do React indica que um componente pode retornar `null` quando não deve renderizar nada. ([react.dev](https://react.dev/learn/conditional-rendering))
 
+## Arquivos `.tsx` 
+
 A extensão **`.tsx`** identifica arquivos TypeScript que contêm **JSX**. Em projetos React com TypeScript, essa extensão é usada quando o arquivo combina lógica TypeScript com marcação de interface.
 
 Um arquivo `.ts` é adequado para códigos que não descrevem diretamente interface visual, como tipos, funções utilitárias, configurações, mocks, stores e scripts de apoio.
@@ -334,7 +342,7 @@ export function ProductCard({ name, price }: ProductCardProps) {
 }
 ```
 
-Nesse exemplo, o arquivo combina, TypeScript (tipagem) e JSX (estrutura visual)
+Nesse exemplo, o arquivo combina TypeScript, usado para tipagem, e JSX, usado para descrever a estrutura visual.
 
 A documentação oficial do TypeScript indica que a extensão `.tsx` é usada quando o arquivo contém JSX. A opção `jsx` no `tsconfig` controla como o TypeScript trata essa sintaxe durante a compilação. ([typescriptlang.org](https://www.typescriptlang.org/docs/handbook/jsx.html))
 

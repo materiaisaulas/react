@@ -1,4 +1,4 @@
-## 1.3 Criação do projeto com Vite
+## Criação do projeto com Vite
 
 A criação do projeto com **Vite** corresponde à etapa de geração da estrutura inicial da aplicação front-end. Após a instalação do Node.js e a disponibilidade do npm, o projeto pode ser criado por meio do comando oficial indicado na documentação do Vite.
 
@@ -18,7 +18,7 @@ O primeiro `--` separa os argumentos interpretados pelo npm dos argumentos encam
 
 Após a execução do comando, o Vite cria um diretório com arquivos iniciais de configuração, arquivos de entrada da aplicação, dependências declaradas e estrutura básica de código-fonte. Essa estrutura será detalhada no subtítulo seguinte.
 
-## 1.3.1 Template `react-ts`
+### Template `react-ts`
 
 O template **`react-ts`** é a predefinição utilizada pelo Vite para criar um projeto configurado com **React** e **TypeScript**. Ao informar esse template no comando de criação, o Vite gera uma estrutura inicial adequada para o desenvolvimento de componentes React em arquivos `.tsx`, com suporte à verificação de tipos fornecida pelo TypeScript.
 
@@ -50,7 +50,7 @@ O arquivo `main.tsx` contém o ponto de entrada da aplicação React. O arquivo 
 
 A extensão `.tsx` indica que o arquivo combina TypeScript com JSX. Essa combinação permite escrever componentes React com marcação de interface e, ao mesmo tempo, utilizar recursos de tipagem estática.
 
-## 1.3.2 Estrutura inicial gerada pelo Vite
+### Estrutura inicial gerada pelo Vite
 
 A estrutura inicial gerada pelo **Vite** corresponde ao conjunto mínimo de arquivos e diretórios necessários para iniciar uma aplicação front-end. Essa estrutura depende do template selecionado no momento da criação do projeto. No caso do template `react-ts`, o Vite cria uma base preparada para React, TypeScript, JSX/TSX, CSS e execução em ambiente local.
 
@@ -149,7 +149,7 @@ export default defineConfig({
 });
 ```
 
-## 1.3.3 Instalação de dependências
+### Instalação de dependências
 
 A **instalação de dependências** corresponde à etapa em que os pacotes declarados no projeto são baixados e preparados para uso local. Em um projeto criado com Vite, essa etapa ocorre após a geração da estrutura inicial e antes da execução da aplicação em modo de desenvolvimento.
 
