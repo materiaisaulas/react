@@ -18,3 +18,7 @@
     - [Dados simulados](react/capitulo_02/02-0502-data.md)
     - [Componentes](react/capitulo_02/02-0503-componentes.md)
     - [App e main](react/capitulo_02/02-0504-main_app.md)
+
+- Alterando o desing system 
+  - [Cores](react/capitulo_05/05-06-refatorando.md)
+  - [Tipografia](react/capitulo_05/05-07-refatorando.md)
